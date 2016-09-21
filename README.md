@@ -71,4 +71,5 @@ Webui is on port 9091, the settings.json file in /config has extra settings not 
 
 ## Versions
 
++ **21.09.16:** Add curl package.
 + **07.09.16:** Initial Release.
