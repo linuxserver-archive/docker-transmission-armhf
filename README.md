@@ -11,7 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # lsioarmhf/transmission
-[![](https://images.microbadger.com/badges/image/lsioarmhf/transmission.svg)](https://microbadger.com/images/lsioarmhf/transmission "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/transmission.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/transmission.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-transmission)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-transmission/)
+[![](https://images.microbadger.com/badges/image/lsioarmhf/transmission.svg)](https://microbadger.com/images/lsioarmhf/transmission "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/transmission.svg)](https://microbadger.com/images/lsioarmhf/transmission "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/transmission.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/transmission.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-transmission)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-transmission/)
 [hub]: https://hub.docker.com/r/lsioarmhf/transmission/
 
 Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more. [Transmission](http://www.transmissionbt.com/about/)
@@ -81,9 +81,17 @@ Transmission will convert it to a hash when you restart the container after maki
 * To monitor the logs of the container in realtime `docker logs -f transmission`.
 
 
+* container version number 
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' transmission`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/transmission`
 
 ## Versions
 
++ **14-10-16:** Add version layer information.
 + **23.09.16:** Add information about securing the webui to README..
 + **21.09.16:** Add curl package.
 + **07.09.16:** Initial Release.
