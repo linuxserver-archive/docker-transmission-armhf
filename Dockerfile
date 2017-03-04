@@ -12,6 +12,7 @@ RUN \
 	curl \
 	jq \
 	p7zip \
+	openssl \
 	tar \
 	transmission-cli \
 	transmission-daemon \
