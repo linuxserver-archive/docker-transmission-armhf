@@ -106,6 +106,7 @@ The automatic update will run once a day at 3am local server time.
 
 ## Versions
 
++ **25.07.17:** Add rsync package.
 + **30.05.17:** Rebase to alpine 3.6.
 + **04.02.17:** Rebase to alpine 3.5.
 + **15.01.17:** Add p7zip, tar , unrar and unzip packages.
