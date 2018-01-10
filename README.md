@@ -106,6 +106,7 @@ The automatic update will run once a day at 3am local server time.
 
 ## Versions
 
++ **10.01.18:** Rebase to alpine 3.7.
 + **25.07.17:** Add rsync package.
 + **30.05.17:** Rebase to alpine 3.6.
 + **04.02.17:** Rebase to alpine 3.5.
