@@ -69,6 +69,8 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 Webui is on port 9091, the settings.json file in /config has extra settings not available in the webui. Stop the container before editing it or any changes won't be saved.
 
+For users pulling an update and unable to access the webui setting you may need to set `"rpc-host-whitelist-enabled": false,` in /config/settings.json`
+
 ## Securing the webui with a username/password.
 
 this requires 3 settings to be changed in the settings.json file.
@@ -106,6 +108,7 @@ The automatic update will run once a day at 3am local server time.
 
 ## Versions
 
++ **26.02.18:** Add info on rpc whitelist for users upgrading.
 + **12.02.18:** Pull transmission from edge repo.
 + **10.01.18:** Rebase to alpine 3.7.
 + **25.07.17:** Add rsync package.
